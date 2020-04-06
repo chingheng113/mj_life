@@ -1,3 +1,4 @@
+#!/data/linc9/conda/envs/mjlife/bin/python3
 import pandas as pd
 
 mj_data = pd.read_csv('relate21a.csv')
