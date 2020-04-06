@@ -23,7 +23,7 @@ for i, r in first_report_time.iterrows():
         else:
             df_temp = pd.concat([df_1, df_2, df_3], axis=1)
             df_result = pd.concat([df_result, df_temp])
-    print(pid)
+    # print(pid)
 df_result.drop(['index'], inplace=True, axis=1)
 df_result.to_csv('relate21a_3times.csv', index=False)
-print('done')
+# print('done')
