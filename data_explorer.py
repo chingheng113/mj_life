@@ -18,10 +18,13 @@ visit_count_s = mj_stroke.groupby(['nn'])['pid'].nunique()
 first__stroke_time = mj_stroke.groupby(['pid'], as_index=False)['n'].min()
 first__stroke = pd.merge(mj_data, first__stroke_time, on=['pid', 'n'])
 vistit_before_stroke = first__stroke.groupby(['n'])['pid'].nunique()
-ax = vistit_before_stroke.plot(kind='bar')
-ax.set_xlabel('Visit count')
-ax.set_ylabel('Subject number')
-plt.show()
+# ax = vistit_before_stroke.plot(kind='bar')
+# ax.set_xlabel('Visit count')
+# ax.set_ylabel('Subject number')
+# plt.show()
+a = first__stroke.groupby(['n'])['pid']
+c = a.groups.get(2).values
+
 print('done')
 
 
