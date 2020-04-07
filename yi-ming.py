@@ -1,7 +1,6 @@
 import pandas as pd
-print('go')
-# mj_data = pd.read_csv('relate21a.csv')
-# print(mj_data.shape)
+mj_data = pd.read_csv('relate21a.csv')
+print(mj_data.shape)
 # # mj_data = pd.read_csv('min.csv')
 # mj_data_at_least_3 = (mj_data.groupby(['pid']).size() > 2).reset_index(name='at_least_3')
 # mj_data_at_least_3_id = mj_data_at_least_3[mj_data_at_least_3.at_least_3].pid
