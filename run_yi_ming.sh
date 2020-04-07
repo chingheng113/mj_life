@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-source /data/linc9/conda/envs/mjlife/bin/python3 yi-ming.py
+module load python/3.6
+python3 yi-ming.py
